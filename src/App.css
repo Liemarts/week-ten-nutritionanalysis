@@ -1,0 +1,201 @@
+body {
+  background-image: url('Nutrition.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 550px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(249, 239, 219, 0.25);
+}
+
+.search {
+  width: 50vh;
+  padding: 10px 20px;
+  background-color: transparent;
+  background-color: rgb(238, 237, 235, 0.4);
+  color: #3c3c3b;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 0px 2px rgb(78, 159, 61, 0.7);
+  font-size: 16px;
+}
+
+
+button {
+  align-self: center;
+  padding: 10px 8px;
+  margin: 8px;
+  border-radius: 15px;
+  color: #FFEBD8;
+  background-color: rgb(78, 159, 61, 0.8);
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+h1 {
+  font-size: 55px;
+  color: rgb(30, 81, 40, 0.9);
+  background-color: rgb(238, 237, 235, 0.2);
+  text-shadow: 4px 4px #e3c0a6;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2, h3, p {
+  color: #232D3F;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media all and (max-width:800px) {
+  h1 {
+      font-size: 45px;
+      text-align: center;
+  }
+
+.container {
+  margin-top: 38px;
+}
+
+form {
+  margin-top: 15px;
+  width: 35vh;
+}
+
+}
+
+@media all and (max-width:500px) {
+  h1 {
+      font-size: 40px;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+
+  form {
+    margin-top: 10px;
+    width: 12vh;
+  }
+
+  body {
+    background-position: center;
+  }
+
+  .App {
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+
+@media all and (max-width:375px) {
+  h1 {
+      font-size: 31px;
+      padding: 3px;
+  }
+
+  .list {
+    margin-top: 10px;
+  }
+
+  .search {
+    width: 9vh;
+    padding: 5px 10px;
+  }
+
+  .container {
+    margin-top: 3px;
+  }
+
+  body {
+    background-position: center;
+  }
+
+  .App {
+    width: 280px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media all and (max-width:1024px) {
+
+  .search {
+    width: 25vh;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+
+  .search {
+    font-size: 18px;
+  }
+
+  .App {
+    width: 600px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
