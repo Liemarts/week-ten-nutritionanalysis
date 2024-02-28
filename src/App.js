@@ -89,16 +89,13 @@ useEffect (() => {
           </div>
       
           <div className='list'>
-            {
-              myIngredients && <h3>{myIngredients.calories} kcal</h3> 
-            }
 
             { myIngredients && <h2>Structure:</h2> }
 
             {
               myIngredients && Object.values(myIngredients.totalNutrients)
-              .map(({ label, quantity, unit}) =>
-                <MyNutritions
+              .map(({ label, quantity, unit}, index) =>
+                <MyNutritions key={index}
                   label={label}
                   quantity={quantity}
                   unit={unit}
